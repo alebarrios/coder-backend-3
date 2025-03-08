@@ -1,0 +1,19 @@
+<tr>
+    <td>{{this.id}}</td>
+    <td>{{this.title}}</td>
+    <td>{{this.price}}</td>
+    <td>{{this.category}}</td>
+    <td>
+        {{#ifEquals role "ADMIN"}}
+        <form class="btn-delete-product" action="/products/{{ this.id }}">
+            <button type="submit">Eliminar</button>
+        </form>
+        {{/ifEquals}}
+        {{#ifEquals role "USER"}}
+        <form action="/carts/{{ cartId }}/product/{{ this.id }}" method="post">
+            <button type="submit">+Carrito</button>
+        </form>
+        {{/ifEquals}}
+        <a href="/products/{{ this.id }}">Ver detalle</a>
+    </td>
+</tr>
