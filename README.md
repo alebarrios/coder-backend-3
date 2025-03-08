@@ -1,4 +1,4 @@
-# Programación Backend II: Diseño y Arquitectura Backend (comisión 70370)
+# Programación Backend III: Testing y Escalabilidad Backend (Comisión 70375s)
 
 ## Entrega Final - Alejandro Barrios
 Instrucciones para ejecutar el proyecto:
